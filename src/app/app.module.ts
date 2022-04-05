@@ -8,6 +8,9 @@ import { DietItemListComponent } from './diet-item-list/diet-item-list.component
 import { NavigaitonBarComponent } from './navigaiton-bar/navigaiton-bar.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { DietTrackerPageComponent } from './diet-tracker-page/diet-tracker-page.component';
+import { WeightPageComponent } from './weight-page/weight-page.component';
+import { WeightItemComponent } from './weight-item/weight-item.component';
+import { WeightItemListComponent } from './weight-item-list/weight-item-list.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { DietTrackerPageComponent } from './diet-tracker-page/diet-tracker-page.
     DietItemListComponent,
     NavigaitonBarComponent,
     HomePageComponent,
-    DietTrackerPageComponent
+    DietTrackerPageComponent,
+    WeightPageComponent,
+    WeightItemComponent,
+    WeightItemListComponent
   ],
   imports: [
     BrowserModule,

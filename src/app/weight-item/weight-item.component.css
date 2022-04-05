@@ -1,0 +1,17 @@
+.weight-box{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    border-top: 3px solid grey;
+    max-width: fit-content;
+}
+.date-box{
+    display: flex;
+    flex-direction: column;
+}
+.weight{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
