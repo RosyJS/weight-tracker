@@ -1,0 +1,18 @@
+.date-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+.food-items{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    margin-right: 50px;
+}
+.diet-box{
+    display: flex;
+    flex-direction: row;
+    border-top: 3px solid grey;
+    max-width: fit-content;
+}
