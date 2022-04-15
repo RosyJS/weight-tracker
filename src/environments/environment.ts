@@ -3,7 +3,23 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+
+    apiKey: "AIzaSyCwzLHSHaUarSS0waEhY2GLO3xBXarScr0",
+  
+    authDomain: "truetracker-fc336.firebaseapp.com",
+  
+    projectId: "truetracker-fc336",
+  
+    storageBucket: "truetracker-fc336.appspot.com",
+  
+    messagingSenderId: "165906860775",
+  
+    appId: "1:165906860775:web:8f015a0f0bbd99faa47042"
+  
+  }
+  
 };
 
 /*
