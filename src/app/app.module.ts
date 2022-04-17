@@ -1,3 +1,5 @@
+import { AngularFireModule } from '@angular/fire/compat';
+
 import { AuthenticationService } from './authentication.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,13 +14,18 @@ import { DietTrackerPageComponent } from './diet-tracker-page/diet-tracker-page.
 import { WeightPageComponent } from './weight-page/weight-page.component';
 import { WeightItemComponent } from './weight-item/weight-item.component';
 import { WeightItemListComponent } from './weight-item-list/weight-item-list.component';
-import { AngularFireModule } from '@angular/fire/compat';
+
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+
+
 import { environment } from '../environments/environment';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
+
+import { MatDialogModule } from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -35,12 +42,14 @@ import { SignupComponent } from './signup/signup.component';
     SignupComponent
   ],
   imports: [
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule, 
     AngularFireAuthModule, 
-    AngularFireStorageModule 
+    AngularFireStorageModule,
+    MatDialogModule,
+    BrowserAnimationsModule
   ],
   providers: [AuthenticationService],
   bootstrap: [AppComponent]
